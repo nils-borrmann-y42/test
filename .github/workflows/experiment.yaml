@@ -5,7 +5,7 @@ on:
 jobs:
   experiment:
     name: My Experiment
-    runs-on: ubuntu-${{ inputs.ubuntu-version }}
+    runs-on: ubuntu-latest
     steps:
       - name: Print a greeting
         run: echo "Hello World"

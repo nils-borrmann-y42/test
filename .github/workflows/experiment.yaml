@@ -1,0 +1,17 @@
+name: Build and Deploy
+on:
+  pull_request:
+
+jobs:
+  experiment:
+    name: My Experiment
+    steps:
+      - name: Print a greeting
+        run: echo "Hello World"
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Run docker action
+        uses: goes-funky/workflows/poetry@TECH-0000-try-poetry-gh-action
+

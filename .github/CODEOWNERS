@@ -1,0 +1,3 @@
+/.github/ @goes-funky/team-infrastructure
+/Dockerfile @goes-funky/team-infrastructure
+/skaffold.yaml @goes-funky/team-infrastructure

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gh-action-demo"
+version = "0.1.0"
+description = ""
+authors = ["Nils Borrmann <nils.borrmann@y42.com>"]
+readme = "README.md"
+packages = [{include = "gh_action_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

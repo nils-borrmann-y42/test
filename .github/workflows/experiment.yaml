@@ -17,16 +17,16 @@ jobs:
         uses: nils-borrmann-y42/gh-action@master
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - uses: actions/github-script@v5
-        name: Comment
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '👋 Thanks for reporting!'
-            })
+#      - uses: actions/github-script@v5
+#        name: Comment
+#        with:
+#          github-token: ${{secrets.GITHUB_TOKEN}}
+#          script: |
+#            github.rest.issues.createComment({
+#              issue_number: context.issue.number,
+#              owner: context.repo.owner,
+#              repo: context.repo.repo,
+#              body: '👋 Thanks for reporting!'
+#            })
 
 

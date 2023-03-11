@@ -9,6 +9,7 @@ packages = [{include = "gh_action_demo"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 requests = "*"
+tomli = "^2.0.1"
 
 
 [build-system]

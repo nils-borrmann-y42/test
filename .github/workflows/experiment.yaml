@@ -14,6 +14,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run docker action
-        uses: goes-funky/workflows/poetry@TECH-0000-try-poetry-gh-action
+        uses: nils-borrmann-y42/gh-action@master
 
 

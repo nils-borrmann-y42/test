@@ -7,9 +7,5 @@ jobs:
     name: My Experiment
     runs-on: ubuntu-latest
     steps:
-      - name: Print a greeting
-        run: echo "Hello World"
       - name: Run docker action
         uses: nils-borrmann-y42/gh-action@master
-        env:
-          GITHUB_TOKEN: ${{ github.token }}

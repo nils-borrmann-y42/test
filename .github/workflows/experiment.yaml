@@ -15,7 +15,10 @@ jobs:
           fetch-depth: 0
       - name: Run docker action
         uses: nils-borrmann-y42/gh-action@master
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - uses: actions/github-script@v5
+        name: Comment
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |

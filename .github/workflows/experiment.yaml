@@ -7,5 +7,5 @@ jobs:
     name: My Experiment
     runs-on: ubuntu-latest
     steps:
-      - name: Run docker action
-        uses: nils-borrmann-y42/gh-action@master
+      - name: Diff poetry.lock
+        uses: nborrmann/diff-poetry-lock@v1.0.0
